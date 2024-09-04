@@ -2,7 +2,7 @@
  * @link https://en.wikipedia.org/wiki/Linear_function
  */
 
-import { Vector2D } from "@lib/vector-2d";
+import { Vector2D } from "@packages/vector-2d";
 
 // f(x) = ax + b
 export class PolymonialLinearFunction {

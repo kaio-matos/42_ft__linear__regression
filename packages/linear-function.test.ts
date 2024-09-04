@@ -3,7 +3,7 @@ import {
   LinearMapLinearFunction,
   PolymonialLinearFunction,
 } from "./linear-function";
-import { Vector2D } from "@lib/vector-2d";
+import { Vector2D } from "@packages/vector-2d";
 
 describe("PolymonialLinearFunction", () => {
   test("positive gradient -> slope = 0.5; intercept = 2; x = 10", () => {
