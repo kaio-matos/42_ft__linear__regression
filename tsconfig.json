@@ -24,7 +24,8 @@
     "noUnusedParameters": false,
     "noPropertyAccessFromIndexSignature": false,
     "paths": {
-      "@packages/*": ["./packages/*"]
+      "@packages/*": ["./packages/*"],
+      "@programs/*": ["./programs/*"],
     }
   }
 }
