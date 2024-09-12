@@ -1,7 +1,7 @@
 import * as d3 from "d3";
 import path from "path";
-import { generateGraph, readDataset } from "./helper";
-import { z } from "zod";
+import { generateGraph, readDataset } from "@scripts/helper";
+import { CarPriceDataset } from "./car-price-mileage";
 
 generateGraph(path.basename(__filename, ".ts"), async () => {
   const width = 640;
@@ -11,13 +11,7 @@ generateGraph(path.basename(__filename, ".ts"), async () => {
   const marginBottom = 30;
   const marginLeft = 60;
 
-  const data = await readDataset(
-    "data.csv",
-    z.object({
-      km: z.string().transform((arg) => Number(arg)),
-      price: z.string().transform((arg) => Number(arg)),
-    }),
-  );
+  const data = await readDataset("data.csv", CarPriceDataset);
 
   // Declare the x (horizontal position) scale.
   const x = d3
