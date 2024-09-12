@@ -1,4 +1,14 @@
-# app
+# ft_linear_regression
+
+### Material
+
+- http://www.stat.yale.edu/Courses/1997-98/101/stat101.htm
+- http://www.stat.yale.edu/Courses/1997-98/101/linreg.htm
+- http://www.stat.yale.edu/Courses/1997-98/101/scatter.htm
+- http://www.stat.yale.edu/Courses/1997-98/101/correl.htm
+
+
+### Running
 
 To install dependencies:
 
