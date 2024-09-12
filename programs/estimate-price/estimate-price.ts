@@ -1,4 +1,4 @@
-import { PolymonialLinearFunction } from "@packages/linear-function";
+import { PolymonialLinearFunction } from "@packages/Math";
 
 export function EstimatePrice(mileage: number, theta0: number, theta1: number) {
   const lf = PolymonialLinearFunction.create().slope(theta1).intercept(theta0);
