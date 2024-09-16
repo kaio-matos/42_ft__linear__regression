@@ -7,17 +7,19 @@ import { Summation } from "./summation";
  * It tells you, on average, how far each value lies from the mean
  */
 export function StandardDeviation(list: number[]) {
-  const meansSquared = list.map((x) => {
-    const mean = x - Mean(list);
-    const meanSquared = Math.pow(mean, 2);
-    return meanSquared;
+  const mean = Mean(list);
+
+  const diffsSquared = list.map((x) => {
+    const difference = x - mean;
+    const diffSquared = Math.pow(difference, 2);
+    return diffSquared;
   });
 
-  const meansSquaredSum = Summation(meansSquared);
+  const diffsSquaredSum = Summation(diffsSquared);
 
   const n = list.length;
 
-  const variance = meansSquaredSum / (n - 1);
+  const variance = diffsSquaredSum / (n - 1);
 
   const standardDeviation = Math.sqrt(variance);
 
